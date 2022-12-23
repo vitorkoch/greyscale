@@ -12,6 +12,6 @@ git clone https://github.com/vitorkoch/greyscale.git
 cd greyscale
 npm install
 # Put the images in the input folder
-node .
+npm start
 ```
 ---
