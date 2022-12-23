@@ -11,10 +11,17 @@ const main = async () => {
     const inputPath = path.join(inputFolder, file);
     const outputPath = path.join(outputFolder, file);
 
-    const image = await Jimp.read(inputPath);
-    image.greyscale().write(outputPath);
+    if (file !== '.gitkeep') {
+      console.log(`Converting ${file}`);
+      const image = await Jimp.read(inputPath);
+      image.greyscale().write(outputPath);
+    }
   }
+  const separator = '=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='
+
+  console.log(separator)
+  console.log(`        Finished!(●'◡'●)`)
+  console.log(separator)
 };
 main()
-  .then(console.log(`Fineshed! (●'◡'●)`))
   .catch((err) => console.error(err));
