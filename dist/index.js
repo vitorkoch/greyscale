@@ -22,7 +22,6 @@ const main = async () => {
     const separator = '=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=';
     console.log(separator);
     console.log(`        Finished!(●'◡'●)`);
-    console.log(separator);
+    console.log(separator + '\n');
 };
-main()
-    .catch((err) => console.error(err));
+main().catch((err) => console.error(err));

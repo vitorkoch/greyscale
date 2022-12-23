@@ -17,11 +17,9 @@ const main = async () => {
       image.greyscale().write(outputPath);
     }
   }
-  const separator = '=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='
-
-  console.log(separator)
-  console.log(`        Finished!(●'◡'●)`)
-  console.log(separator)
+  const separator = '=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=';
+  console.log(separator);
+  console.log(`        Finished!(●'◡'●)`);
+  console.log(separator + '\n');
 };
-main()
-  .catch((err) => console.error(err));
+main().catch((err) => console.error(err));
